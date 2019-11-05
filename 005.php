@@ -9,7 +9,7 @@ function isPrime(int $nb) : bool {
     if ($nb === 2 || $nb === 3) { return true; }
     if ($nb % 2 == 0) { return false; }
 
-    for ($i = 3; $i < sqrt($nb); $i+=2) {
+    for ($i = 3; $i <= sqrt($nb); $i+=2) {
         if ($nb % $i === 0) {
             return false;
         }
